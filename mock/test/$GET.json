@@ -1,0 +1,6 @@
+{
+  "default" : {
+    "body": "default.json",
+    "status": 200
+  }
+}
