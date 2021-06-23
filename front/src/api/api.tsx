@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+
 const api  = axios.create({
     baseURL: `http://localhost:3000/`,
     headers: {
@@ -7,5 +8,6 @@ const api  = axios.create({
   },
 });
 
-const fetcher = url => api.get(url).then(res => res.data)
-export default fetcher
+const getClient = url => api.get(url).then(res => res.data)
+const postClient = (url,req) => api.post(url,req).then(res => res.data)
+export {getClient,postClient}

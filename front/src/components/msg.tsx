@@ -1,9 +1,9 @@
 import useSWR from "swr";
-import fetcher from "../api/api"
+import {getClient} from "../api/api"
 
 
 export default function Msg() {
-    const { data, error } = useSWR('api/msg', fetcher)
+    const { data, error } = useSWR('api/msg', getClient)
 
     if (error) return (
         <div>faild to Load.</div>
