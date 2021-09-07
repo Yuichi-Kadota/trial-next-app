@@ -1,4 +1,5 @@
 import Msg from '../components/msg'
+import Img from '../components/img';
 
 const App = () => {
 
@@ -6,6 +7,7 @@ const App = () => {
     <>
       <h1>Next.js Trial App</h1>
       <Msg></Msg>
+      <Img></Img>
     </>
   );
 };
