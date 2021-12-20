@@ -1,6 +1,6 @@
 module.exports = {
   reactStrictMode: true,
-  images: {
-    domains: ['$S3BucketDomain.ap-northeast-1.amazonaws.com'],
+  env: {
+    ...require(`./config/${process.env.APP_ENV || "local"}.json`),
   },
 }
